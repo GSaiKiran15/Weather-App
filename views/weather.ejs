@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <img
+      src="https://openweathermap.org/img/wn/<%= icon %>@2x.png"
+      alt="Weather Icon"
+    />
+    <p>Present Temperature - <span id="pTemp"><%= temperature %> °C</span></p>
+    <p>Feels Like - <span id="feelsLike"><%= feelsLike %> °C</span></p>
+    <p>Minimum Temperature - <span id="minTemp"><%= minTemp %> °C</span></p>
+    <p>Maximum Temperature - <span id="maxTemp"><%= maxTemp %> °C</span></p>
+    <p>Description - <span id="description"><%= description %></span></p>
+  </body>
+</html>
